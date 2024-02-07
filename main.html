@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<style>
+* {
+	margin:0px;
+	padding:0px;
+}
+#chess_part{
+	border:solid black 2px;
+	display:inline;
+}
+#pieces_part{
+	width:90vh;
+	height:97vh;
+	display:inline-block;
+	vertical-align:top;
+}
+li{
+	font-size:30px;
+	display:inline-block;
+	width:90px;
+	height:90px;
+	border:black solid 2px;
+	transition-duration:1s;
+	transition-time-function:linear;
+}
+
+li:hover{
+	width:105px;
+	height:105px;
+}
+
+#color_choice{
+	font-size:30px;
+	width:30%;
+	vertical-align:center;
+	text-align:center;
+}
+
+
+		</style>
+	</head>
+	<body>
+		<canvas id ="chess_part"></canvas>
+		<div id="pieces_part"> 
+			<ul>
+				<li><input class = "piece" id="king"type="radio">king</li>
+				<li><input class = "piece" id="queen"type="radio">queen</li>
+				<li><input class = "piece" id="rook"type="radio">rook</li>
+				<li><input class = "piece" id="bishop"type="radio">bishop</li>
+				<li><input class = "piece" id="knight"type="radio">knight</li>
+				<li><input class = "piece" id="pawn"type="radio">pawn</li>
+			</ul>
+			<div id="color_choice">
+				<input id="color" type="radio" name="piece_color">white</input>
+				<input id="color" type="radio" name="piece_color">black</input>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
